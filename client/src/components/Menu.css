@@ -1,0 +1,228 @@
+ion-menu ion-content {
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+
+ion-menu.md ion-content {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+.menuItem {
+  display: flex;
+}
+
+ion-menu.md ion-list {
+  padding: 20px 0;
+}
+
+ion-menu.md ion-note {
+  margin-bottom: 30px;
+}
+
+ion-menu.md ion-list-header,
+ion-menu.md ion-note {
+  padding-left: 10px;
+}
+/* .main_menu {
+  --side-max-width: 22vw;
+} */
+/* ion-menu.md ion-list#inbox-list { */
+/* border-bottom: 1px solid var(--ion-color-step-150, #d7d8da); */
+/* } */
+
+ion-menu.md ion-list#inbox-list ion-list-header {
+  font-size: 22px;
+  font-weight: 600;
+  min-height: 20px;
+}
+
+ion-menu.md ion-list#labels-list ion-list-header {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #757575;
+  min-height: 26px;
+}
+/* ion-list-header ion-buttons{
+   pointer: 
+ } */
+ion-list-header ion-icon {
+  margin-right: 32px;
+}
+
+ion-menu.md ion-item {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  border-radius: 4px;
+}
+
+ion-menu.md ion-item.selected {
+  --background: rgba(142, 85, 66, 0.2);
+}
+
+ion-menu.md ion-item.selected ion-icon {
+  color: #8e5542;
+}
+ion-menu.md ion-item.selected .filtersvgcolor {
+  filter: invert(32%) sepia(45%) saturate(518%) hue-rotate(329deg)
+    brightness(102%) contrast(90%);
+}
+ion-menu.md ion-item ion-icon {
+  color: #506372;
+}
+
+ion-menu.md ion-item ion-label {
+  font-weight: 500;
+}
+
+ion-menu.ios ion-content {
+  --padding-bottom: 20px;
+}
+
+ion-menu.ios ion-list {
+  padding: 20px 0 0 0;
+}
+
+ion-menu.ios ion-note {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+ion-menu.ios ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 50px;
+}
+
+ion-menu.ios ion-item ion-icon {
+  font-size: 24px;
+  color: #506372;
+  margin-right: 32px;
+}
+
+ion-menu.ios ion-item .selected ion-icon {
+  color: #8e5542;
+}
+
+ion-menu.ios ion-list#labels-list ion-list-header {
+  margin-bottom: 8px;
+}
+
+ion-menu.ios ion-list-header,
+ion-menu.ios ion-note {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+ion-menu.ios ion-note {
+  margin-bottom: 8px;
+}
+
+ion-note {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--ion-color-medium-shade);
+}
+
+ion-item.selected {
+  --color: #8e5542;
+}
+.filtersvgcolor {
+  filter: invert(39%) sepia(15%) saturate(723%) hue-rotate(164deg)
+    brightness(88%) contrast(83%);
+}
+.LoginBtn {
+  --background: #d3b4a1 !important;
+  --color: white !important;
+  --padding-end: 30px;
+  --padding-start: 30px;
+}
+.headerbtn {
+  color: #283845 !important;
+  margin-right: 10px !important;
+  font-size: 17.5px !important;
+}
+.MobileMenubtn {
+  --background: #fff !important;
+  --color: #283845 !important;
+  --box-shadow: none !important;
+}
+/* .mainToolbar {
+  height: 57px;
+} */
+@media (min-width: 769px) {
+  .main_menu {
+    width: 15% !important;
+  }
+  .headerToolbar {
+    display: none !important;
+  }
+  .headerClientProject {
+    display: none !important;
+  }
+  .mainToolbar {
+    height: 59px;
+  }
+}
+@media (max-width: 576px) {
+  .LoginBtn {
+    --padding-end: 15px !important;
+    --padding-start: 15px !important;
+    margin-right: 8px !important;
+  }
+  .headerbtn {
+    --color: #506372 !important;
+    /* margin: -1px !important; */
+    margin: -5px !important;
+  }
+  .mainToolbar {
+    height: 49px;
+    padding: 3px;
+  }
+}
+@media (max-width: 767px) {
+  /* .main_menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .main_menu ion-list {
+    display: flex;
+  }
+  .menuLabel {
+    display: none;
+  } */
+  .main_menu {
+    display: none;
+  }
+  .headerbtn {
+    color: #506372 !important;
+    margin: -1px !important;
+  }
+  .headerProjects {
+    --background: transparent;
+  }
+  .headerExplore {
+    --background-color: transparent;
+  }
+  .headerMain {
+    --background: white !important;
+  }
+  .HeaderImg {
+    padding: 0 !important;
+  }
+  .headerionimg {
+    padding: 4px 10px !important;
+  }
+}
+
+ion-back-button {
+  --color: whitesmoke;
+}
+@media only screen and (device-width: 540px) {
+  .headerionimg {
+    padding: 4px 65px !important;
+  }
+}

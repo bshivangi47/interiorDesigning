@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+   
+
+    <base href="/" />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<script>
+  _affirm_config = {
+    public_api_key: "E9PLOYAIC50NH7SQ",
+    // public_api_key: "YRRJ1GXU1E3XEZBY",
+    script: "https://cdn1.affirm.com/js/v2/affirm.js"
+    // script: "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+  };
+  (function (m, g, n, d, a, e, h, c) {
+    var b = m[n] || {}, k = document.createElement(e), p = document.getElementsByTagName(e)[0], l = function (a, b, c) { return function () { a[b]._.push([c, arguments]) } }; b[d] = l(b, d, "set"); var f = b[d]; b[a] = {}; b[a]._ = []; f._ = []; b._ = []; b[a][h] = l(b, a, h); b[c] = function () { b._.push([h, arguments]) }; a = 0; for (c = "set add save post open empty reset on off trigger ready setProduct".split(" "); a < c.length; a++)f[c[a]] = l(b, d, c[a]); a = 0; for (c = ["get", "token", "url", "items"]; a < c.length; a++)f[c[a]] = function () { }; k.async =
+      !0; k.src = g[e]; p.parentNode.insertBefore(k, p); delete g[e]; f(g); m[n] = b
+  })(window, _affirm_config, "affirm", "checkout", "ui", "script", "ready", "jsReady");
+</script>
+  <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><title style="font-family: 'Rubik', 'sans-serif'; font-weight:500" >Hemly</title>
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+</html>
